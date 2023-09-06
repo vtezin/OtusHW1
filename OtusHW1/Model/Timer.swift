@@ -12,14 +12,14 @@ struct Timer: Identifiable, Equatable {
     
     let hours: Int
     let minutes: Int
-    
+     
     var description: String {
         "\(hours)h \(minutes)m"
     }
     
-    static func ==(lhs: Timer, rhs: Timer) -> Bool {
-        return lhs.id == rhs.id
-    }
+//    static func ==(lhs: Timer, rhs: Timer) -> Bool {
+//        return lhs.id == rhs.id
+//    }
     
     static var testData: [Timer] {
         var timers = [Timer]()
