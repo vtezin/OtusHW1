@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Timer: Identifiable {
+struct Timer: Identifiable, Equatable {
     var id: UUID
     
     let hours: Int
@@ -15,6 +15,10 @@ struct Timer: Identifiable {
     
     var description: String {
         "\(hours)h \(minutes)m"
+    }
+    
+    static func ==(lhs: Timer, rhs: Timer) -> Bool {
+        return lhs.id == rhs.id
     }
     
     static var testData: [Timer] {

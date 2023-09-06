@@ -18,7 +18,7 @@ struct NewTimerScreen: View {
                 .imageScale(.large)
         }
         .sheet(isPresented: $sheetIsPresented) {
-            TimerEditView()
+            TimerEditScreen()
         }
     }
 }

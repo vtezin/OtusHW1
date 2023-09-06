@@ -15,9 +15,10 @@
 		CE15308E2AA85FC90073C350 /* TimerListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15308D2AA85FC90073C350 /* TimerListScreen.swift */; };
 		CE1530902AA860300073C350 /* NewTimerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15308F2AA860300073C350 /* NewTimerScreen.swift */; };
 		CE1530942AA8610B0073C350 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1530932AA8610B0073C350 /* Timer.swift */; };
-		CE1530962AA864A00073C350 /* TimerEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1530952AA864A00073C350 /* TimerEditView.swift */; };
+		CE1530962AA864A00073C350 /* TimerEditScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1530952AA864A00073C350 /* TimerEditScreen.swift */; };
 		CECD20502AA888E40029B43B /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD204F2AA888E40029B43B /* TimePicker.swift */; };
 		CECD20522AA8A4820029B43B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD20512AA8A4820029B43B /* AppState.swift */; };
+		CECD20542AA8F6BE0029B43B /* TimerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD20532AA8F6BE0029B43B /* TimerRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +31,10 @@
 		CE15308D2AA85FC90073C350 /* TimerListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerListScreen.swift; sourceTree = "<group>"; };
 		CE15308F2AA860300073C350 /* NewTimerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerScreen.swift; sourceTree = "<group>"; };
 		CE1530932AA8610B0073C350 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
-		CE1530952AA864A00073C350 /* TimerEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEditView.swift; sourceTree = "<group>"; };
+		CE1530952AA864A00073C350 /* TimerEditScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEditScreen.swift; sourceTree = "<group>"; };
 		CECD204F2AA888E40029B43B /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 		CECD20512AA8A4820029B43B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CECD20532AA8F6BE0029B43B /* TimerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,8 @@
 				CE15308D2AA85FC90073C350 /* TimerListScreen.swift */,
 				CE15308F2AA860300073C350 /* NewTimerScreen.swift */,
 				CECD204F2AA888E40029B43B /* TimePicker.swift */,
-				CE1530952AA864A00073C350 /* TimerEditView.swift */,
+				CE1530952AA864A00073C350 /* TimerEditScreen.swift */,
+				CECD20532AA8F6BE0029B43B /* TimerRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,9 +179,10 @@
 			files = (
 				CE1530802AA85DCE0073C350 /* ContentView.swift in Sources */,
 				CE15308E2AA85FC90073C350 /* TimerListScreen.swift in Sources */,
-				CE1530962AA864A00073C350 /* TimerEditView.swift in Sources */,
+				CE1530962AA864A00073C350 /* TimerEditScreen.swift in Sources */,
 				CECD20522AA8A4820029B43B /* AppState.swift in Sources */,
 				CE1530902AA860300073C350 /* NewTimerScreen.swift in Sources */,
+				CECD20542AA8F6BE0029B43B /* TimerRowView.swift in Sources */,
 				CECD20502AA888E40029B43B /* TimePicker.swift in Sources */,
 				CE1530942AA8610B0073C350 /* Timer.swift in Sources */,
 				CE15307E2AA85DCE0073C350 /* OtusHW1App.swift in Sources */,

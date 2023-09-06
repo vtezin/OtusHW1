@@ -9,6 +9,7 @@ import Combine
 
 class AppState: ObservableObject {
     @Published var selectedTimer: Timer?
+    @Published var timerForEdit: Timer?
     @Published var currentTab: Tabs = .timer
     @Published var timers = Timer.testData
 }

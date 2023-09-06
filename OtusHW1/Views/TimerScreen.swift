@@ -9,13 +9,31 @@ import SwiftUI
 
 struct TimerScreen: View {
     @EnvironmentObject private var appState: AppState
+    @State private var selectedTimer: Timer?
     
     var body: some View {
         List {
-            Button {
-                appState.currentTab = .timerList
-            } label: {
-                Image(systemName: "gear")
+            ForEach(appState.timers, id: \.id) { timer in
+                Button {
+                    selectedTimer = timer
+                } label: {
+                    TimerRowView(timer: timer, bold: timer == selectedTimer)
+                }
+            }
+            
+            if let timer = selectedTimer {
+                HStack {
+                    TimerRowView(timer: timer)
+                    Spacer()
+                    Button {
+                        appState.timerForEdit = timer
+                        appState.currentTab = .timerList
+                    } label: {
+                        Text("Edit")
+                    }
+                }
+            } else {
+                Text("Select timer")
             }
         }
     }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TimerEditView: View {
+struct TimerEditScreen: View {
     @Environment(\.presentationMode) private var presentationMode
     @EnvironmentObject private var appState: AppState
     
@@ -41,9 +41,11 @@ struct TimerEditView: View {
 }
 
 // MARK: - Functions
-extension TimerEditView {
+extension TimerEditScreen {
     private func done() {
-        let newTimer = Timer(id: UUID(), hours: hours, minutes: minutes)
+        let timerID = timer?.id ?? UUID()
+        
+        let newTimer = Timer(id: timerID, hours: hours, minutes: minutes)
         
         if let timer = timer {
             if let index = appState.timers.firstIndex(where: {$0.id == timer.id}) {
@@ -58,6 +60,6 @@ extension TimerEditView {
 
 struct TimerEditView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerEditView(timer: Timer.testData.first!)
+        TimerEditScreen(timer: Timer.testData.first!)
     }
 }
