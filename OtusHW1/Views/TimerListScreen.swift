@@ -44,7 +44,7 @@ struct TimerListScreen: View {
     }
 }
 
-struct SecondScreen_Previews: PreviewProvider {
+struct TimerListScreen_Previews: PreviewProvider {
     static var previews: some View {
         TimerListScreen()
     }

@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-struct TimePicker: UIViewRepresentable {
+struct TimePickerView: UIViewRepresentable {
     @Binding var hours: Int
     @Binding var minutes: Int
     
@@ -16,7 +16,7 @@ struct TimePicker: UIViewRepresentable {
         return Coordinator(self)
     }
 
-    func makeUIView(context: UIViewRepresentableContext<TimePicker>) -> UIDatePicker {
+    func makeUIView(context: UIViewRepresentableContext<TimePickerView>) -> UIDatePicker {
         let picker = UIDatePicker()
         picker.preferredDatePickerStyle = .wheels
         picker.datePickerMode = .countDownTimer
@@ -26,14 +26,14 @@ struct TimePicker: UIViewRepresentable {
         return picker
     }
     
-    func updateUIView(_ picker: UIDatePicker, context: UIViewRepresentableContext<TimePicker>) {
+    func updateUIView(_ picker: UIDatePicker, context: UIViewRepresentableContext<TimePickerView>) {
         picker.countDownDuration = Double(hours * 60 * 60 + minutes * 60)
     }
     
     class Coordinator {
-        let picker: TimePicker
+        let picker: TimePickerView
         
-        init(_ picker: TimePicker) {
+        init(_ picker: TimePickerView) {
             self.picker = picker
         }
         

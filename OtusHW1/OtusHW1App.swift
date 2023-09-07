@@ -9,12 +9,11 @@ import SwiftUI
 
 @main
 struct OtusHW1App: App {
-    
     @StateObject var appState = AppState()
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainScreen()
                 .environmentObject(appState)
         }
     }

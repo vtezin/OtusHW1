@@ -14,7 +14,7 @@ struct NewTimerScreen: View {
         Button {
             sheetIsPresented = true
         } label: {
-            Image(systemName: "plus.circle")
+            Label("New timer", systemImage: "plus.circle")
                 .imageScale(.large)
         }
         .sheet(isPresented: $sheetIsPresented) {
@@ -23,7 +23,7 @@ struct NewTimerScreen: View {
     }
 }
 
-struct ThirdScreen_Previews: PreviewProvider {
+struct NewTimerScreen_Previews: PreviewProvider {
     static var previews: some View {
         NewTimerScreen()
     }

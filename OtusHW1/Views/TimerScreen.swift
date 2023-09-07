@@ -21,7 +21,6 @@ struct TimerScreen: View {
             }
             .padding()
             
-            
             List {
                 ForEach(appState.timers, id: \.id) { timer in
                     HStack {

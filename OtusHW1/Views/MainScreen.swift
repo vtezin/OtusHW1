@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainScreen: View {
     @EnvironmentObject private var appState: AppState
     
     var body: some View {
@@ -16,23 +16,23 @@ struct ContentView: View {
                 .tabItem {
                     Label("Timer", systemImage: "clock")
                 }
-                .tag(Tabs.timer)
+                .tag(MainScreenTabs.timer)
             TimerListScreen()
                 .tabItem {
                     Label("Timers", systemImage: "folder")
                 }
-                .tag(Tabs.timerList)
+                .tag(MainScreenTabs.timerList)
             NewTimerScreen()
                 .tabItem {
                     Label("New", systemImage: "plus.circle")
                 }
-                .tag(Tabs.addTimer)
+                .tag(MainScreenTabs.addTimer)
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainScreen()
     }
 }

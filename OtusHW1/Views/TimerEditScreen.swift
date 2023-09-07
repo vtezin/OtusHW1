@@ -27,7 +27,7 @@ struct TimerEditScreen: View {
     
     var body: some View {
         VStack {
-            TimePicker(hours: $hours, minutes: $minutes)
+            TimePickerView(hours: $hours, minutes: $minutes)
                 .navigationTitle("\(hours)h \(minutes)m")
                 .navigationBarTitleDisplayMode(.inline)
             Button {
@@ -47,11 +47,9 @@ extension TimerEditScreen {
         
         let newTimer = Timer(id: timerID, hours: hours, minutes: minutes)
         
-        if let timer = timer {
-            if let index = appState.timers.firstIndex(where: {$0.id == timer.id}) {
-                appState.timers[index] = newTimer
-                return
-            }
+        if let _ = timer, let index = appState.timers.firstIndex(where: {$0.id == timerID}) {
+            appState.timers[index] = newTimer
+            return
         }
         
         appState.timers.append(newTimer)

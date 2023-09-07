@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE15307E2AA85DCE0073C350 /* OtusHW1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15307D2AA85DCE0073C350 /* OtusHW1App.swift */; };
-		CE1530802AA85DCE0073C350 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15307F2AA85DCE0073C350 /* ContentView.swift */; };
+		CE1530802AA85DCE0073C350 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15307F2AA85DCE0073C350 /* MainScreen.swift */; };
 		CE1530822AA85DCF0073C350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1530812AA85DCF0073C350 /* Assets.xcassets */; };
 		CE1530852AA85DCF0073C350 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1530842AA85DCF0073C350 /* Preview Assets.xcassets */; };
 		CE15308C2AA85EFC0073C350 /* TimerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15308B2AA85EFC0073C350 /* TimerScreen.swift */; };
@@ -16,7 +16,7 @@
 		CE1530902AA860300073C350 /* NewTimerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15308F2AA860300073C350 /* NewTimerScreen.swift */; };
 		CE1530942AA8610B0073C350 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1530932AA8610B0073C350 /* Timer.swift */; };
 		CE1530962AA864A00073C350 /* TimerEditScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1530952AA864A00073C350 /* TimerEditScreen.swift */; };
-		CECD20502AA888E40029B43B /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD204F2AA888E40029B43B /* TimePicker.swift */; };
+		CECD20502AA888E40029B43B /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD204F2AA888E40029B43B /* TimePickerView.swift */; };
 		CECD20522AA8A4820029B43B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD20512AA8A4820029B43B /* AppState.swift */; };
 		CECD20542AA8F6BE0029B43B /* TimerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD20532AA8F6BE0029B43B /* TimerRowView.swift */; };
 /* End PBXBuildFile section */
@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		CE15307A2AA85DCE0073C350 /* OtusHW1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtusHW1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE15307D2AA85DCE0073C350 /* OtusHW1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtusHW1App.swift; sourceTree = "<group>"; };
-		CE15307F2AA85DCE0073C350 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE15307F2AA85DCE0073C350 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		CE1530812AA85DCF0073C350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1530842AA85DCF0073C350 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE15308B2AA85EFC0073C350 /* TimerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerScreen.swift; sourceTree = "<group>"; };
@@ -32,7 +32,7 @@
 		CE15308F2AA860300073C350 /* NewTimerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerScreen.swift; sourceTree = "<group>"; };
 		CE1530932AA8610B0073C350 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		CE1530952AA864A00073C350 /* TimerEditScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEditScreen.swift; sourceTree = "<group>"; };
-		CECD204F2AA888E40029B43B /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
+		CECD204F2AA888E40029B43B /* TimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
 		CECD20512AA8A4820029B43B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CECD20532AA8F6BE0029B43B /* TimerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,8 +67,8 @@
 		CE15307C2AA85DCE0073C350 /* OtusHW1 */ = {
 			isa = PBXGroup;
 			children = (
-				CE1530922AA8609A0073C350 /* Model */,
 				CE15307D2AA85DCE0073C350 /* OtusHW1App.swift */,
+				CE1530922AA8609A0073C350 /* Model */,
 				CE1530912AA860670073C350 /* Views */,
 				CE1530812AA85DCF0073C350 /* Assets.xcassets */,
 				CE1530832AA85DCF0073C350 /* Preview Content */,
@@ -87,11 +87,11 @@
 		CE1530912AA860670073C350 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CE15307F2AA85DCE0073C350 /* ContentView.swift */,
+				CE15307F2AA85DCE0073C350 /* MainScreen.swift */,
 				CE15308B2AA85EFC0073C350 /* TimerScreen.swift */,
 				CE15308D2AA85FC90073C350 /* TimerListScreen.swift */,
 				CE15308F2AA860300073C350 /* NewTimerScreen.swift */,
-				CECD204F2AA888E40029B43B /* TimePicker.swift */,
+				CECD204F2AA888E40029B43B /* TimePickerView.swift */,
 				CE1530952AA864A00073C350 /* TimerEditScreen.swift */,
 				CECD20532AA8F6BE0029B43B /* TimerRowView.swift */,
 			);
@@ -101,8 +101,8 @@
 		CE1530922AA8609A0073C350 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CE1530932AA8610B0073C350 /* Timer.swift */,
 				CECD20512AA8A4820029B43B /* AppState.swift */,
+				CE1530932AA8610B0073C350 /* Timer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,13 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1530802AA85DCE0073C350 /* ContentView.swift in Sources */,
+				CE1530802AA85DCE0073C350 /* MainScreen.swift in Sources */,
 				CE15308E2AA85FC90073C350 /* TimerListScreen.swift in Sources */,
 				CE1530962AA864A00073C350 /* TimerEditScreen.swift in Sources */,
 				CECD20522AA8A4820029B43B /* AppState.swift in Sources */,
 				CE1530902AA860300073C350 /* NewTimerScreen.swift in Sources */,
 				CECD20542AA8F6BE0029B43B /* TimerRowView.swift in Sources */,
-				CECD20502AA888E40029B43B /* TimePicker.swift in Sources */,
+				CECD20502AA888E40029B43B /* TimePickerView.swift in Sources */,
 				CE1530942AA8610B0073C350 /* Timer.swift in Sources */,
 				CE15307E2AA85DCE0073C350 /* OtusHW1App.swift in Sources */,
 				CE15308C2AA85EFC0073C350 /* TimerScreen.swift in Sources */,

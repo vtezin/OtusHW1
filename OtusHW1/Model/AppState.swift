@@ -8,13 +8,13 @@
 import Combine
 
 class AppState: ObservableObject {
+    @Published var currentTab: MainScreenTabs = .timer
+    @Published var timers = Timer.testData
     @Published var selectedTimer: Timer?
     @Published var timerForEdit: Timer?
-    @Published var currentTab: Tabs = .timer
-    @Published var timers = Timer.testData
 }
 
-enum Tabs {
+enum MainScreenTabs {
     case timer
     case timerList
     case addTimer
