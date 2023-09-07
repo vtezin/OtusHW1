@@ -41,6 +41,7 @@ struct TimerListScreen: View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
